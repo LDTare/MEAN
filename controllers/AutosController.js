@@ -41,7 +41,7 @@ exports.leerAuto = function (req, res) {
 
 
   exports.borrarAuto = function (req, res) {
-    Auto.deleteOne({ _id: req.params.ownderId }, function (err, auto) {
+    Auto.deleteOne({ _id: req.params.autoId }, function (err, auto) {
       if (err)
         res.send(err);
       res.json({ message: 'Auto borrado exitosamente' });
