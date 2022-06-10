@@ -23,6 +23,6 @@ app.use(bodyParser.json());
 require("./routes/AutosRoute")(app);
 require("./routes/PropietarioRoute")(app);
 
-app.listen(port)
+app.listen(process.env.PORT || port)
 
 console.log('Servidor para Rest iniciada en: ' + port);
