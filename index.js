@@ -1,6 +1,6 @@
 var express = require('express'),
 app = express();
-port = process.nextTick.port || 3800,
+port = process.nextTick.port || 3000,
 mongoose = require('mongoose'),
 bodyParser = require('body-parser')
 cors = require('cors');
