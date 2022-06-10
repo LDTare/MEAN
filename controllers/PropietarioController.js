@@ -41,7 +41,7 @@ exports.leerOwner = function (req, res) {
 
 
   exports.borrarOwner = function (req, res) {
-    Owner.deleteOne({ _id: req.params.ownderId }, function (err, owner) {
+    Owner.deleteOne({ _id: req.params.ownerId }, function (err, owner) {
       if (err)
         res.send(err);
       res.json({ message: 'Propietario borrado exitosamente' });
